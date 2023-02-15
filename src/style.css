@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    display: grid;
+    position: fixed;
+    min-height: 100vh;
+    place-items:center;
+    line-height: 1.6;
+    background-color: rgb(78, 78, 78);
+    font-family: sans-serif;
+    right: 10%;
+    background-image: url(./img/VecteezyMeteorIllustrationRD0621-submit-01_generated.jpg);
+    background-size:fit;
+    animation: onLoad 1000ms ease;
+    
+}
+
+
+.infoCard{
+    position: fixed;
+    left: 10%;
+    top: 5%;
+    color: whitesmoke;
+    background-size: cover;
+    max-width: 45ch;
+    min-width: 35ch;
+    border-radius: .5rem;
+    transition-delay: 200ms;
+    transition:transform 500ms ease;
+    margin-top: 25px;
+    height: 570px;
+    padding:1rem 5rem;
+    animation: scroll 60s infinite linear;
+    background-image: url('img/3d-abstract-wave-pattern-background.jpg');
+}
+
+
+.movies{
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border-radius: 1em;
+}
+ .favSites{
+    position: relative;
+    bottom: -20%;
+    left: -10%;
+ }
+ .favSites ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+ }
+ .favSites li a{
+   margin-left: 15px;
+   color:greenyellow;
+   font-size: larger;
+ }
+
+ .favSites a:hover{
+    color: aliceblue;
+ }
+.about{
+    position: relative;
+    left:110%;
+    top: -60%;
+    background-image: url("./img/5172658.jpg");
+    animation: scroll 30s infinite linear;
+    background-size:cover;
+}
+.infoCard:hover{
+    transform: scale(1.10);
+}
+.quinn-img{
+    margin: 0;
+    position: relative;
+    left: 20%;
+    height: 150px;
+    width: 145px;
+    bottom: 37%;
+}
+
+#line{
+    position: relative;
+    left: 40%;
+    bottom: 0%;
+    width: 50px;
+}
+.quinn-img img{
+    border-radius:1000px;
+    height: 180px;
+}
+.quinn-info{
+    position: relative;
+    top: 44%;
+}
+#name{
+    position: relative;
+    left: 20%;
+    font-size: 2.5ch;
+    padding-bottom: 20px;
+    width: 200px;
+    height: 55px;
+    
+    } 
+    #job{
+        position: relative;
+        left: 14%;
+        font-size: 2.5ch;
+        padding-bottom: 20px;
+        width: 200px;
+    height: 55px;
+        
+    }
+    #school{
+        position: relative;
+        left: 20%;
+        font-size: 2.5ch;
+        width: 220px;
+        height: 55px;
+    }
+    
+
+.contact-tab{
+    position: relative;
+    top: 26%;
+    left: 31%;
+    padding: 0em;
+   
+    
+}
+.list{
+    display: flex;
+    z-index: -1;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    from{
+    background-position:0 0;
+    }
+    to{
+        background-position: 160% 0;
+    }
+
+}
+
+/* @media screen and (max-width: 1480px){
+    .list{
+        visibility: hidden;
+    }
+
+    .schedule{
+        visibility: hidden;
+    }
+    .warning{
+        opacity: 1;
+    }
+
+} */
